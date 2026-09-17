@@ -10,6 +10,10 @@
 
 其他版本尚未确认兼容。测试记录与未验证项见 [验证说明](online-damage-meter-verification.md)。
 
+## 创意工坊安装（推荐）
+
+[直接订阅 Steam 创意工坊条目](https://steamcommunity.com/sharedfiles/filedetails/?id=3803105134)，等待 Steam 自动下载后，在 Brotato 的 Mod 列表中启用 `OnlineDamageMeter` 及两个前置并重启游戏。每个需要看到统计的客户端都应单独订阅并启用本补丁；房主不必安装本补丁。
+
 ## 原理与范围
 
 当前两个前置的代码中，Online 在客户端清空 `WaveTimerLabel.wave_timer`，而 DmgMeter 依赖该引用判断是否刷新伤害容器，因此跳过显示更新。
